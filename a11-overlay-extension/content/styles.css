@@ -1,0 +1,18 @@
+.content_script {
+  color: #c9c9c9;
+  background-color: #0a0c10;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 9;
+  margin: 1rem;
+  padding: 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  border-radius: 5rem;
+}
+
+.content_logo {
+  width: 32px;
+}

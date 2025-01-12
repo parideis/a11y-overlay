@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "name": "A11Y Overlay Extension",
+  "description": "Browser Extension for A11Y Overlay.",
+  "version": "0.0.1",
+  "author": {
+    "name": "Denis Paris",
+    "email": "hi@dprais.eu",
+    "url": "https://dparis.eu"
+  },
+  "devDependencies": {
+    "typescript": "5.3.3",
+    "extension": "latest"
+  },
+  "scripts": {
+    "dev": "extension dev",
+    "start": "extension start",
+    "build": "extension build"
+  },
+  "dependencies": {
+    "a11y-snippets": "file:../a11y-snippets"
+  }
+}

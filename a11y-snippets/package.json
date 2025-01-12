@@ -1,0 +1,9 @@
+{
+    "name": "shared-snippets",
+    "version": "0.1.0",
+    "description": "Wiederverwendbare Snippets für verschiedene Projekte",
+    "main": "index.js",
+    "type": "module",
+    "license": "MIT"
+  }
+  

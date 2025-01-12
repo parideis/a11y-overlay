@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json.schemastore.org/chrome-manifest.json",
+  "manifest_version": 3,
+  "version": "0.0.1",
+  "name": "A11Y-Overlay Extension",
+  "description": "Browser Extension for A11Y-Overlay",
+  "icons": {
+    "48": "images/extension_48.png"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "tabs"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_title": "Activate Sidebar"
+  },
+  "background": {
+    "chromium:service_worker": "background.ts",
+    "firefox:scripts": [
+      "background.ts"
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content/scripts.ts"
+      ]
+    }
+  ],
+  "chromium:side_panel": {
+    "default_path": "sidebar/index.html",
+    "default_title": "Side Panel Content"
+  },
+  "firefox:sidebar_action": {
+    "default_panel": "sidebar/index.html",
+    "default_title": "Side Panel Content"
+  },
+  "chromium:permissions": ["sidePanel"],
+  "author": "Denis Paris"
+}
