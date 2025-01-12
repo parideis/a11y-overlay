@@ -174,6 +174,11 @@ Commercial A11Y overlays often promise “one-click” or “one-line-of-code”
 
 These features are aimed at **end users** who need immediate adjustments to a webpage to improve their experience.
 
+### 7. Developer Tools 
+- **Only Focus** 
+  When activated, this feature highlights the currently focused element on the page, providing developers with a clear visual cue to identify and improve the accessibility of interactive elements, such as buttons, links, and form fields, ultimately enhancing the overall user experience for people with disabilities.
+
+These features are aimed at **developers** who want to improve the accessibility of their web applications.
 
 ## Usage 
 
